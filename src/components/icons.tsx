@@ -85,9 +85,9 @@ export function LogoMark({ className }: IconProps) {
     <svg viewBox="0 0 24 24" fill="none" className={className}>
       <circle cx="12" cy="12" r="9" fill="white" />
       <g mask="url(#logo-mask)">
-        <rect x="7" y="6" width="10" height="12" rx="3.5" fill="url(#logo-gradient)" />
+        <rect x="7" y="6" width="10" height="12" rx="3" fill="url(#logo-gradient)" />
       </g>
-      <rect x="12" y="10.5" width="3" height="3" rx="1" fill="url(#logo-gradient)" />
+      <rect x="13.4" y="10" width="2.4" height="4" rx="1.1" fill="url(#logo-gradient)" />
       <defs>
         <linearGradient id="logo-gradient" x1="7" y1="6" x2="17" y2="18" gradientUnits="userSpaceOnUse">
           <stop stopColor="#67A0FF" />
@@ -95,7 +95,7 @@ export function LogoMark({ className }: IconProps) {
         </linearGradient>
         <mask id="logo-mask">
           <rect x="7" y="6" width="10" height="12" fill="white" />
-          <circle cx="17" cy="12" r="5" fill="black" />
+          <rect x="12.3" y="8.3" width="6" height="7.4" rx="1.8" fill="black" />
         </mask>
       </defs>
     </svg>
