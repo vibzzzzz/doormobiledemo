@@ -65,17 +65,6 @@ function App() {
           />
         </div>
 
-        {/* Suggestions */}
-        <p className="mt-5 text-center text-xs text-[#010028]/80">Not sure where to start? Try one of these:</p>
-        <div className="mt-3 flex flex-col gap-2">
-          <SuggestionPill {...suggestions[0]} />
-          <div className="flex gap-2">
-            <SuggestionPill {...suggestions[1]} />
-            <SuggestionPill {...suggestions[2]} />
-          </div>
-          <SuggestionPill {...suggestions[3]} />
-        </div>
-
         {/* Chat input */}
         <div className="mt-5 flex items-center justify-between rounded-full bg-white p-3 shadow-[0_4px_20px_rgba(16,24,64,0.08)]">
           <div className="flex flex-1 items-center gap-1.5">
@@ -87,6 +76,17 @@ function App() {
             <MicIcon className="size-5" />
             <SendIcon className="size-8" />
           </div>
+        </div>
+
+        {/* Suggestions */}
+        <p className="mt-5 text-center text-xs text-[#010028]/80">Not sure where to start? Try one of these:</p>
+        <div className="mt-3 flex flex-col gap-2">
+          <SuggestionPill {...suggestions[0]} />
+          <div className="flex gap-2">
+            <SuggestionPill {...suggestions[1]} />
+            <SuggestionPill {...suggestions[2]} />
+          </div>
+          <SuggestionPill {...suggestions[3]} />
         </div>
       </div>
     </div>
