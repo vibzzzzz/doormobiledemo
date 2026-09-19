@@ -83,13 +83,20 @@ export function SendIcon({ className }: IconProps) {
 export function LogoMark({ className }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" className={className}>
-      <rect x="7" y="4" width="10" height="16" rx="4" fill="white" />
-      <circle cx="12" cy="12" r="2.4" fill="url(#logo-gradient)" />
+      <circle cx="12" cy="12" r="9" fill="white" />
+      <g mask="url(#logo-mask)">
+        <rect x="7" y="6" width="10" height="12" rx="3.5" fill="url(#logo-gradient)" />
+      </g>
+      <rect x="12" y="10.5" width="3" height="3" rx="1" fill="url(#logo-gradient)" />
       <defs>
-        <linearGradient id="logo-gradient" x1="7" y1="4" x2="17" y2="20" gradientUnits="userSpaceOnUse">
+        <linearGradient id="logo-gradient" x1="7" y1="6" x2="17" y2="18" gradientUnits="userSpaceOnUse">
           <stop stopColor="#67A0FF" />
           <stop offset="1" stopColor="#183EEB" />
         </linearGradient>
+        <mask id="logo-mask">
+          <rect x="7" y="6" width="10" height="12" fill="white" />
+          <circle cx="17" cy="12" r="5" fill="black" />
+        </mask>
       </defs>
     </svg>
   );

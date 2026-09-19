@@ -35,14 +35,14 @@ function App() {
     <div className="min-h-screen bg-[#e4e9f2] flex items-center justify-center py-10 px-4">
       <div className="relative w-full max-w-[400px] rounded-[36px] bg-[#f0f3f8] px-6 pb-8 pt-10 shadow-[0_20px_60px_rgba(16,24,64,0.15)]">
         {/* Header */}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex items-center justify-center gap-3">
           <div
-            className="flex size-[64px] items-center justify-center rounded-full shadow-[0_2px_16px_rgba(0,0,0,0.2)]"
+            className="flex size-[52px] shrink-0 items-center justify-center rounded-full shadow-[0_2px_16px_rgba(0,0,0,0.2)]"
             style={{ backgroundImage: "linear-gradient(140deg, #67A0FF 0%, #183EEB 92%)" }}
           >
-            <LogoMark className="size-8" />
+            <LogoMark className="size-7" />
           </div>
-          <div className="text-center">
+          <div className="text-left">
             <p className="text-lg font-semibold text-[#010028]">Doorvisor</p>
             <p className="text-xs text-[#010028]/40">Your AI Assistant</p>
           </div>
